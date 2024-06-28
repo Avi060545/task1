@@ -5,13 +5,13 @@ function Counter()
     const [count, setCount] = useState(0);
     return (
         <div>
-            <div>
-<button onClick={setCount(count+1)}> Increase
+           <div>
+<button onClick={()=> {setCount(count+1)}}> Increase
 </button>
 <div>
 {count}
 </div>
-<button onClick={setCount(count+1)}> Decrease
+<button onClick={()=> {setCount(count-1)}}> Decrease
 </button>
 </div>
         </div>

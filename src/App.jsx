@@ -3,21 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Counter from './components/Counter'
+import Btn from './components/Btn'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-
-<div>
-<button onClick={()=> {setCount(count+1)}}> Increase
-</button>
-<div>
-{count}
-</div>
-<button onClick={()=> {setCount(count-1)}}> Decrease
-</button>
-</div>
+      <Btn></Btn>
+      {/* <Counter></Counter> */}
      
     </>
   )
